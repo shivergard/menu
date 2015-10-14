@@ -1,23 +1,14 @@
 <?php namespace Shivergard\Menu;
 
-use App\Requests;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-use \Carbon;
+class MenuController extends \Shivergard\Crud\CrudController {
 
-use \Config;
+	protected $layout = 'layouts.content';
 
-
-class MenuController extends \Shivergard\Menu\PackageController {
-
-	public function test(){
-		return false;
-	}
-
-
-	public function init(){
-		return view('menu::menu');
-	}
+	public $model = 'App\Settings\Menu';
 
 }

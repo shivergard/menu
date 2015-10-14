@@ -1,6 +1,12 @@
 {
     "name": "shivergard/menu",
     "description": "",
+    "repositories": [
+      {
+      "type": "git",
+       "url": "git@github.com:shivergard/crud.git"
+      }
+    ],
     "authors": [
         {
             "name": "Ronalds Sovas",
@@ -9,7 +15,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "5.0.*"
+        "illuminate/support": "5.*",
+        "shivergard/crud" : "dev-crud_included_50" 
     },
     "autoload": {
         "classmap": [
